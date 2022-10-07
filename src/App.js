@@ -1,8 +1,11 @@
 import './App.css';
+import List from './components/List';
+import ListForm from './components/ListForm';
 
 function App() {
   return (
-    <div className="App">
+    <div className="PIXL">
+      <List></List>
     </div>
   );
 }
