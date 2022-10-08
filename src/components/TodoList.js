@@ -1,3 +1,9 @@
+/* crediting github: briancodex for to do functionality used his components
+from https://github.com/briancodex/react-todo-app-v1 for to do section of this
+react app */
+
+
+
 import React, { useState } from 'react';
 import TodoForm from './TodoForm';
 import Todo from './Todo';
@@ -42,7 +48,7 @@ function TodoList() {
 
   return (
     <>
-      <h1>What's the Plan for Today?</h1>
+      <h1>Add your link!</h1>
       <TodoForm onSubmit={addTodo} />
       <Todo
         todos={todos}

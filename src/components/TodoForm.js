@@ -1,3 +1,9 @@
+/* crediting github: briancodex for to do functionality used his components
+from https://github.com/briancodex/react-todo-app-v1 for to do section of this
+react app */
+
+
+
 import React, { useState, useEffect, useRef } from 'react';
 
 function TodoForm(props) {
@@ -50,7 +56,7 @@ function TodoForm(props) {
             ref={inputRef}
           />
           <button onClick={handleSubmit} className='todo-button'>
-            Add todo
+            Add Link
           </button>
         </>
       )}
