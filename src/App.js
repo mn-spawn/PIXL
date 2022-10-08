@@ -1,11 +1,10 @@
 import './App.css';
-import List from './components/List';
-import ListForm from './components/ListForm';
+import TodoList from './components/TodoList';
 
 function App() {
   return (
-    <div className="PIXL">
-      <List></List>
+    <div className="App">
+      <TodoList />
     </div>
   );
 }
