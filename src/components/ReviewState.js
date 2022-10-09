@@ -19,6 +19,7 @@ function ReviewState() {
   }
     return (
       <div>
+<<<<<<< Updated upstream
         <h1>QR Code</h1>
 
         {data.map(data=> <ul>{data.text}</ul>)}
@@ -29,6 +30,9 @@ function ReviewState() {
         <br></br>     
         <a href={qrcode} download="qrcode.png"> Download</a>
         </>}
+=======
+          {data.map(data=> <h2>{data.text}</h2>)}
+>>>>>>> Stashed changes
       </div>
     
     )
