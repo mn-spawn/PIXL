@@ -1,10 +1,9 @@
 /* crediting github: briancodex for to do functionality used his components
 from https://github.com/briancodex/react-todo-app-v1 for to do section of this
 react app */
-
-
-
-import React, { useState } from 'react';
+import React, {useState} from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import TodoForm from './TodoForm';
 import Todo from './Todo';
 
@@ -36,15 +35,11 @@ function TodoList() {
     setTodos(removedArr);
   };
 
-  const completeTodo = id => {
-    let updatedTodos = todos.map(todo => {
-      if (todo.id === id) {
-        todo.isComplete = !todo.isComplete;
-      }
-      return todo;
-    });
-    setTodos(updatedTodos);
+
+  const openInNewTab = url => {
+    window.open(url, '_blank', 'noopener,noreferrer');
   };
+
 
   return (
     <>
@@ -52,10 +47,13 @@ function TodoList() {
       <TodoForm onSubmit={addTodo} />
       <Todo
         todos={todos}
-        completeTodo={completeTodo}
         removeTodo={removeTodo}
         updateTodo={updateTodo}
       />
+
+      <button onClick={
+        () => openInNewTab("localhost:3000/review")
+        }>Review</button>
     </>
   );
 }

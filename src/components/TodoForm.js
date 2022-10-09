@@ -55,7 +55,7 @@ function TodoForm(props) {
             className='todo-input'
             ref={inputRef}
           />
-          <button onClick={handleSubmit} className='todo-button'>
+          <button onclick="openInNewTab('www.test.com');" className='todo-button'>
             Add Link
           </button>
         </>
