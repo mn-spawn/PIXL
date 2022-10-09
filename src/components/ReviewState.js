@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import QRCode from 'qrcode';
-// import './src/App.css';
 
 function ReviewState({parentToChild}) {
 
@@ -20,11 +19,11 @@ function ReviewState({parentToChild}) {
                 {parentToChild}
                 <button onClick={CreateQRCode}>Generate</button>
                 <br></br>
-                {qrcode && <React.Fragment> 
+                {qrcode && <> 
                     <img src={qrcode}/>
                     <br></br>     
                     <a href={qrcode} download="qrcode.png"> Download</a>
-                </React.Fragment>}
+                </>}
             </div>
           )
 }
