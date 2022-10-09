@@ -64,26 +64,34 @@ h1 {
 }
 
 .QRCodeButton{
+  border-radius: 10px;
   display: block;
   margin: 0 auto;
   font-size: 40px;
   align-items: center;
   background-color: var(--darkBackground);
-  color: #FFFFFF;
+  color: black;
   border-color: var(--darkBackground);
 }
 
+/*this stylizes the rows on review state */
 .links{
-  background-color: var(--darkBackground);
-  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  background: var(--darkgray);
+  padding-bottom: 20px;
+
+  padding: 16px;
   border-radius: 5px;
-  padding: 15px 15px 15px 15px;
-  border-radius: 4px 0 0 4px;
-  border: 2px solid var(--darkgray);
-  outline: none;
-  width: 320px;
-  color: var(--darkgray);
-  
+  width: 90%;
+  background-color: var(--darkgray);
+}
+
+.link{
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 .todo-form {
@@ -188,7 +196,6 @@ ul{
     padding: 0;
 }
 
-
 .navbar
 {
 padding-top: 30px;
@@ -225,14 +232,11 @@ padding-top: 30px;
 }
 
 .qrCodeImage{
-  background-color: var(--background);
-}
-
-.image-connect{
-  border-radius: 50%;
-  outline: black;
-  box-shadow: --var(--grayShadow);
-  text-align: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .welcome{
@@ -240,6 +244,8 @@ padding-top: 30px;
   text-align: left;
   font-size: 70px;
 }
+
+/* intropage style */
 
 .welcomemess{
   width: 90%;
@@ -256,7 +262,7 @@ padding-top: 30px;
 }
 
 .aboutusp{
-  font-size: 15px;
+  font-size: 20px;
   text-align: left;
   padding-left: 10px;
 }

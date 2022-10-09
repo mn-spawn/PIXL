@@ -14,6 +14,7 @@ class AboutUs extends Component {
                         and more common that content creators are putting charities and causes they support in bios or even
                         featuring them on streams. 
                         <br></br>
+                        <br></br>
 
                         As a result we wanted to create something that would allow frequent and easy sharing and spreading of causes
                         and resources that also allowed a person to create a snapshot of their own personal affiliations, beliefs, and 
