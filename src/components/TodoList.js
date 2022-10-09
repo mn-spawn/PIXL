@@ -1,6 +1,7 @@
 /* crediting github: briancodex for to do functionality used his components
 from https://github.com/briancodex/react-todo-app-v1 for to do section of this
 react app */
+
 import React, {useState} from "react";
 import {Link, useNavigate} from "react-router-dom";
 import TodoForm from './TodoForm';
@@ -20,7 +21,6 @@ function TodoList() {
 
     const newTodos = [todo, ...todos];
     data.push(todo)
-    console.log(data)
 
     setTodos(newTodos);
     console.log(...todos);
@@ -56,12 +56,14 @@ function TodoList() {
         updateTodo={updateTodo}
       />
 
+      <button>
+       <Link to="/review" state={{data}}>
+          Review
+        </Link> 
+      </button>
 
-      <button onClick={
-        () => openInNewTab("/review")
-        }>Review</button>
     </>
   );
 }
-
+export {data};
 export default TodoList;
