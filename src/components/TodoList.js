@@ -3,9 +3,10 @@ from https://github.com/briancodex/react-todo-app-v1 for to do section of this
 react app */
 import React, {useState} from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import {withRouter} from "react-router-dom";
 import TodoForm from './TodoForm';
 import Todo from './Todo';
+import ReviewState from "./ReviewState";
 
 function TodoList() {
   const [todos, setTodos] = useState([]);
@@ -52,7 +53,7 @@ function TodoList() {
       />
 
       <button onClick={
-        () => openInNewTab("localhost:3000/review")
+        () => openInNewTab("/review")
         }>Review</button>
     </>
   );
