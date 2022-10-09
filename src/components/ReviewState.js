@@ -1,12 +1,14 @@
+import { render } from '@testing-library/react';
 import React from 'react'
+import {useLocation} from 'react-router-dom';
 
-function ReviewState({parentToChild}) {
-        return (
-            <div>
-                <h1>This is review state</h1>
-                {parentToChild}
-            </div>
-          )
+function ReviewState(props) {
+    return (
+        <div>
+            <h1>Hi</h1>
+        </div>
+                
+    )        
 }
 
 export default ReviewState

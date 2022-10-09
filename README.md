@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Welcome to our project!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## How we got started:
 
-## Available Scripts
+We noticed that social media and social justice have been intersecting more and more
+especially with shareable resources and places to get involved. In addition, it's becoming more
+and more common that content creators are putting charities and causes they support in bios or even
+featuring them on streams.
 
-In the project directory, you can run:
+As a result we wanted to create something that would allow frequent and easy sharing and spreading of causes
+and resources that also allowed a person to create a snapshot of their own personal affiliations, beliefs, and 
+issues that they cared about.
 
-### `npm start`
+## How Does it work?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The user goes onto a list creator and inputs the links to resources they want to be present when someone scans
+their QR code. Then they review their final list and generate a QR code if it looks good! They then can share this QR code
+to whatever social media allows for picture uploads. It then can be scanned and reshared by anyone who sees it!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## What are the goals?
 
-### `npm test`
+We want to make getting involved as easy as possible and scanning a QR code that automatically gives you a list of resources
+allows people who identify with the causes of an individual to get more involved and knowledgeable. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Flexibility
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+We take pride in the flexibility of this program and hope that not only can it be used for sharing causes and movements 
+but also to organize people and events beyond just social justice. The QR code could contain information about an event or
+even just a list of readings or resources on a cool topic or idea. Shareability is endlessly applicable.

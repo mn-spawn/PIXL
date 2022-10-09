@@ -49,7 +49,7 @@ function TodoForm(props) {
       ) : (
         <>
           <input
-            placeholder='Add a todo'
+            placeholder='Add a link'
             value={input}
             onChange={handleChange}
             name='text'

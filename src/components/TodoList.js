@@ -2,14 +2,15 @@
 from https://github.com/briancodex/react-todo-app-v1 for to do section of this
 react app */
 import React, {useState} from "react";
-import ReactDOM from "react-dom";
-import {withRouter} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import TodoForm from './TodoForm';
 import Todo from './Todo';
 import ReviewState from "./ReviewState";
 
 function TodoList() {
   const [todos, setTodos] = useState([]);
+  const navigate = useNavigate()
+
 
   const addTodo = todo => {
     if (!todo.text || /^\s*$/.test(todo.text)) {
@@ -51,6 +52,16 @@ function TodoList() {
         removeTodo={removeTodo}
         updateTodo={updateTodo}
       />
+
+      <Link 
+        to={{
+          pathname: "/review",
+          state: {todos}
+        }}
+        
+        
+        >
+        </Link>
 
       <button onClick={
         () => openInNewTab("/review")
