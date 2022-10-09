@@ -2,14 +2,14 @@
 
 ## How we got started:
 
-We noticed that social media and social justice have been intersecting more and more
+We noticed that social media and social justice have been intersecting more and more,
 especially with shareable resources and places to get involved. In addition, it's becoming more
 and more common that content creators are putting charities and causes they support in bios or even
 featuring them on streams.
 
-As a result we wanted to create something that would allow frequent and easy sharing and spreading of causes
-and resources that also allowed a person to create a snapshot of their own personal affiliations, beliefs, and 
-issues that they cared about.
+As a result we wanted to create something that would allow frequent, easy, shareable acces to a list of causes
+and resources that while simultaneously allowing a person to create a snapshot of their own personal affiliations, beliefs, and 
+issues that they care individually about.
 
 ## How Does it work?
 
