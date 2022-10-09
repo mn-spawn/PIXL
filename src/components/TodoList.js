@@ -48,20 +48,37 @@ function TodoList() {
 
   return (
     <>
-      <h1>Add your link!</h1>
-      <TodoForm onSubmit={addTodo} />
-      <Todo
-        todos={todos}
-        removeTodo={removeTodo}
-        updateTodo={updateTodo}
-      />
 
-      <button>
-       <Link to="/review" state={{data}}>
-          Review
-        </Link> 
-      </button>
+      <div
+       style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
+      }}
+      >
+        <h1>Add your link!</h1>
+        </div>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+          }}
+        >
+          <TodoForm onSubmit={addTodo} />
+        </div>
+        <Todo
+          todos={todos}
+          removeTodo={removeTodo}
+          updateTodo={updateTodo}
+        />
 
+        
+        <Link to="/review" state={{data}}>
+            <button className="review">
+                  Review 
+            </button>
+          </Link>
     </>
   );
 }

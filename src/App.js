@@ -6,12 +6,17 @@ import './App.css';
 import TodoList from './components/TodoList';
 import ReviewState from './components/ReviewState';
 import NavBar from './components/NavBar';
+import IntroPage from './components/IntroPage';
+import AboutUs from './components/AboutUs';
 
 function App() {
   return (
         <Router>
+          <header><NavBar/></header>
           <Routes>
-              <Route path = "/" element={<TodoList/>} exact />
+            <Route path = "/aboutUs" element={<AboutUs/>} exact /> 
+              <Route path = "/" element={<IntroPage/>} exact />
+              <Route path = "/linklist" element={<TodoList className="todolist"/>} exact />
               <Route path = '/review' element={<ReviewState/>} exact />
             </Routes>
         </Router>

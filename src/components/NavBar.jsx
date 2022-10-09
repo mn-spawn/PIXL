@@ -9,14 +9,14 @@ class NavBar extends Component {
             <header id = 'navbar'>
             <ul> 
                 <li>
-                    <a id="click">Code Blog</a>
+                    <a className="click" href="/aboutUs" target= "_blank">About Us</a>
                     
                 </li>
                 <li>
-                    <a id="click" href="https://github.com/mn-spawn" target= "_blank" > GitHub</a>
+                    <a className="click" href="https://github.com/mn-spawn/PIXL" target= "_blank" > GitHub</a>
                 </li>
                 <li>
-                  <a id="click"> Intro Page</a>
+                  <a className="click" href="/" target= "_blank" > Intro Page</a>
                 </li>
             </ul>
             </header>

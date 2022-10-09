@@ -19,16 +19,24 @@ function ReviewState() {
   }
     return (
       <div>
-        <h1>QR Code</h1>
-
-        {data.map(data=> <ul><a href={"http://"+ data.text} target="_blank" rel="noopener noreferrer">{data.text}</a></ul>)}
-        <button onClick={CreateQRCode}>Generate</button>
-        <br></br>
-        {qrcode && <> 
-        <img src={qrcode}/>
-        <br></br>     
-        <a href={qrcode} download="qrcode.png"> Download</a>
-        </>}
+        <div
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center'
+            }}
+        >
+          <h1>QR Codes</h1>
+        </div>
+          {data.map(data=> <ul><a className="links" href={data.text} target="_blank" rel="noopener noreferrer">{data.text}</a></ul>)}
+          <button className='QRCodeButton' onClick={CreateQRCode}>Generate</button>
+          <br></br>
+          {qrcode && <> 
+          <img className="qrCodeImg"src={qrcode}/>
+          <br></br>     
+          <a 
+          href={qrcode} download="qrcode.png"> Download</a>
+          </>}
       </div>
     
     )

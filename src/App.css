@@ -1,6 +1,25 @@
+:root{
+  /* CSS HEX */
+  --background: #ebf0e9;
+  --darkBackground: #458728;
+  --headerShadowA:#006400;
+  }
+
+
 .App {
-  background-color: #EBD2B4;
+  background-color: var(--background);
 }
+
+body{
+  padding-top: 80px;
+  background-color: var(--background);
+}
+
+.todolist{
+  align-items: center;
+  border-color: var(--darkBackground);
+}
+
   
 .todo-app {
   display: flex;
@@ -16,10 +35,48 @@
 }
 
 h1 {
-  background-color: #D6F6DD;
+  background-color: var(--darkBackground);
+  border-radius: 10px;
+  width: 50%;
+  padding: 15px;
+  text-align: center;
   margin: 32px 0;
-  color: black;
+  color: var(--background);
   font-size: 24px;
+}
+
+.review{
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  font-size: 40px;
+  align-items: center;
+  background-color: var(--darkBackground);
+  color: #FFFFFF;
+  border-color: var(--darkBackground);
+}
+
+.QRCodeButton{
+  display: block;
+  margin: 0 auto;
+  font-size: 40px;
+  align-items: center;
+  background-color: var(--darkBackground);
+  color: #FFFFFF;
+  border-color: var(--darkBackground);
+}
+
+.links{
+  background-color: var(--darkBackground);
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid var(--headerShadowA);
+  outline: none;
+  width: 320px;
+  color: var(--headerShadowA);
+  
 }
 
 .todo-form {
@@ -29,33 +86,36 @@ h1 {
 .todo-input {
   padding: 14px 32px 14px 16px;
   border-radius: 4px 0 0 4px;
-  border: 2px solid black;
+  border: 2px solid var(--headerShadowA);
   outline: none;
   width: 320px;
   background: transparent;
-  color: black;
+  color: var(--headerShadowA);
 }
 
 .todo-input::placeholder {
-  color: black;
+
+  color: var(--headerShadowA);
 }
 
 .todo-button {
   padding: 16px;
-  border: black;
+  border: var(--headerShadowA);
   border-radius: 0 4px 4px 0;
   cursor: pointer;
+  color: #FFFFFF;
   outline: #D9D9D9;
-  background: wheat;
+  align-items: center;
+  background: var(--headerShadowA);
 }
 
 .todo-input.edit {
   
-  border: 2px solid black;
+  border: 2px solid var(--headerShadowA);
 }
 
 .todo-button.edit {
-  background: black;
+  background: var(--headerShadowA);
   padding: 16px 22px;
 }
 
@@ -70,13 +130,14 @@ h1 {
   justify-content: space-between;
   align-items: center;
   margin: 4px auto;
-  color: white;
-  background: black;
+  color: #FFFFFF;
+  background: var(--headerShadowA);
+  padding-bottom: 20px;
 
   padding: 16px;
   border-radius: 5px;
   width: 90%;
-  background-color: black;
+  background-color: var(--headerShadowA);
 }
 
 .icons {
@@ -95,34 +156,23 @@ h1 {
   color: #fff;
 }
 
-:root{
-  /* CSS HEX */
-  --buttontext: #c39da8;
-  --background: #e0e0e0;
-  --buttontextShadow: #ba919d;
-  --backgroundShadow: #ffffff;
-  --header: #dec4cc;
-  --headerShadowA: #bda7ad;
-  --headerShadowB: #ffe1eb;
-  }
-  
+/*nav bar css */
+
 .site-container
 {
     padding-left: 0;
-    padding-right: 0;
-}
-
-body{
-    background-color: var(--background)
+    padding-right: 5px;
 }
 
 header{
-    background-color:var(--header);
+    background-color:var(--darkBackground);
+    box-shadow: 4px 4px 4px 4px #397320;
     width: 100%;
     top:0;
     position: fixed;  
     padding: 5px;   
-    box-shadow: 5px 5px 10px var(--headerShadowA);
+    padding-right: 5px;
+    border-bottom: 5px #333333;
 }
 
 ul{
@@ -132,38 +182,41 @@ ul{
 }
 
 
-li{
-  font-family: 'bubbleheader', fallback, sans-serif;
-  font-size: large;
-  color: var(--buttontext);
-  border:white;
-  float:left;
-  padding: 20px;
-  display: inline;
-  margin: 10px;
-
-  border-radius: 50px;
-  background-color: var(--header);
-  box-shadow:  10px 10px 30px var(--headerShadowA),
-           -10px -10px 30px var(--headerShadowB);
-}
-
-li:hover
-{
-  border-radius: 50px;
-background: linear-gradient(145deg, #c8b0b8, #eed2da);
-box-shadow:  20px 20px 60px #bda7ad,
-           -20px -20px 60px #ffe1eb;
-           color: var(--buttontextShadow);
-}   
-
 .navbar
 {
 padding-top: 30px;
-background-color: var(--header); 
 }
 
-#click{
+.click{
   color: var(--buttontextShadow);
   text-decoration: none;
+  font-size: medium;
+  color: #FFFFFF;
+  float:right;
+  padding: 10px;
+  padding-right: 20px;
+  display: inline;
+  margin: 10px;
+}
+
+.click::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: var(--background);
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+.click:hover::after,
+.click:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+.qrCodeImage{
+  background-color: var(--background);
 }
