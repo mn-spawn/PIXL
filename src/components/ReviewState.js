@@ -10,7 +10,7 @@ function ReviewState() {
     return (
       <div>
           <h1>hi</h1>
-          
+          {data.map(data=> <h2>{data.text}</h2>)}
       </div>
     
     )
