@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import './App.css';
 import TodoList from './components/TodoList';
 import ReviewState from './components/ReviewState';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
