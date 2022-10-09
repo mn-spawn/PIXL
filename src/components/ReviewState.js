@@ -10,7 +10,7 @@ function ReviewState() {
   console.log({data})
   const[qrcode, setQrcode] = useState('')
   const CreateQRCode = () =>{
-    QRCode.toDataURL('google.com',{
+    QRCode.toDataURL('http://localhost:3000/review',{
       width: 500,
       margin: 3
     },(err,url) => {
