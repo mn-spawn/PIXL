@@ -22,7 +22,7 @@ function ReviewState() {
 <<<<<<< Updated upstream
         <h1>QR Code</h1>
 
-        {data.map(data=> <ul>{data.text}</ul>)}
+        {data.map(data=> <ul><a href={"http://"+ data.text} target="_blank" rel="noopener noreferrer">{data.text}</a></ul>)}
         <button onClick={CreateQRCode}>Generate</button>
         <br></br>
         {qrcode && <> 
