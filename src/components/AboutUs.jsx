@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import toggle from 'react-toggle'
 
 const options =  [, 'How Does it work?', 'What are the goals?', 'Flexibility']
 class AboutUs extends Component {
