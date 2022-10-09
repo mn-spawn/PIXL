@@ -8,19 +8,28 @@ class IntroPage extends Component {
     state = {  } 
     render() { 
         return (
-                <div>
-                    <div
-                         style={{
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }} >
+                <div className="class">
+                    <ul>
+                        <div>
+                                <h1 className="welcome">Welcome...</h1>
+                                <p className="welcomemess">
+                                    When you're ready to start organizing, communicating, connecting
+                                    go ahead and start linking!
+                                </p>
+                                <br></br>
+                                <br></br>
+                                <button className="review" onClick={() => openInNewTab('/linklist')}>
+                                    Start Linking
+                                </button>
+                        </div>
+                           
+                    </ul>
+                    
+                    
 
-                        <h1>Welcome...</h1>
-                    </div>
-                    <button className="review" onClick={() => openInNewTab('/linklist')}>
-                        Start Linking
-                    </button>
+
+
+                
                 </div>
         );
     }

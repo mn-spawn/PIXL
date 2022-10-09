@@ -3,8 +3,15 @@
   --background: #ebf0e9;
   --darkBackground: #458728;
   --headerShadowA:#006400;
+  --darkgray: #373737;
+  --grayShadow: #19241a;
+  --gradientOne: #7cb365;
+  --gradientTwo: #1d751d;
   }
 
+  a{
+    text-decoration: none;
+  }
 
 .App {
   background-color: var(--background);
@@ -12,7 +19,7 @@
 
 body{
   padding-top: 80px;
-  background-color: var(--background);
+  background-image: linear-gradient(to right, var(--gradientOne), var(--gradientTwo))
 }
 
 .todolist{
@@ -35,24 +42,24 @@ body{
 }
 
 h1 {
-  background-color: var(--darkBackground);
+  font-size: xx-large;
   border-radius: 10px;
   width: 50%;
   padding: 15px;
   text-align: center;
   margin: 32px 0;
-  color: var(--background);
+  color: var(--grayShadow);
   font-size: 24px;
 }
 
 .review{
   display: block;
+  text-decoration: none;
   margin: 0 auto;
   border-radius: 10px;
   font-size: 40px;
   align-items: center;
   background-color: var(--darkBackground);
-  color: #FFFFFF;
   border-color: var(--darkBackground);
 }
 
@@ -70,12 +77,12 @@ h1 {
   background-color: var(--darkBackground);
   text-decoration: none;
   border-radius: 5px;
-  padding: 14px 32px 14px 16px;
+  padding: 15px 15px 15px 15px;
   border-radius: 4px 0 0 4px;
-  border: 2px solid var(--headerShadowA);
+  border: 2px solid var(--darkgray);
   outline: none;
   width: 320px;
-  color: var(--headerShadowA);
+  color: var(--darkgray);
   
 }
 
@@ -86,27 +93,27 @@ h1 {
 .todo-input {
   padding: 14px 32px 14px 16px;
   border-radius: 4px 0 0 4px;
-  border: 2px solid var(--headerShadowA);
+  border: 2px solid var(--darkgray);
   outline: none;
   width: 320px;
   background: transparent;
-  color: var(--headerShadowA);
+  color: var(--darkgray);
 }
 
 .todo-input::placeholder {
 
-  color: var(--headerShadowA);
+  color: var(--darkgray);
 }
 
 .todo-button {
   padding: 16px;
-  border: var(--headerShadowA);
+  border: var(--darkgray);
   border-radius: 0 4px 4px 0;
   cursor: pointer;
   color: #FFFFFF;
   outline: #D9D9D9;
   align-items: center;
-  background: var(--headerShadowA);
+  background: var(--darkgray);
 }
 
 .todo-input.edit {
@@ -131,13 +138,13 @@ h1 {
   align-items: center;
   margin: 4px auto;
   color: #FFFFFF;
-  background: var(--headerShadowA);
+  background: var(--darkgray);
   padding-bottom: 20px;
 
   padding: 16px;
   border-radius: 5px;
   width: 90%;
-  background-color: var(--headerShadowA);
+  background-color: var(--darkgray);
 }
 
 .icons {
@@ -165,8 +172,8 @@ h1 {
 }
 
 header{
-    background-color:var(--darkBackground);
-    box-shadow: 4px 4px 4px 4px #397320;
+    background-color:var(--darkgray);
+    box-shadow: 4px 4px 4px 4px var(--grayShadow);
     width: 100%;
     top:0;
     position: fixed;  
@@ -219,4 +226,37 @@ padding-top: 30px;
 
 .qrCodeImage{
   background-color: var(--background);
+}
+
+.image-connect{
+  border-radius: 50%;
+  outline: black;
+  box-shadow: --var(--grayShadow);
+  text-align: right;
+}
+
+.welcome{
+  color: var(--darkShadow);
+  text-align: left;
+  font-size: 70px;
+}
+
+.welcomemess{
+  width: 90%;
+  color: var(--darkShadow);
+  padding-left: 10px;
+  text-align: left;
+  font-size: 30px;
+}
+
+.aboutush{
+  font-size: 30px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.aboutusp{
+  font-size: 15px;
+  text-align: left;
+  padding-left: 10px;
 }
