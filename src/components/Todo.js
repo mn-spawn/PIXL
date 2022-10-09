@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import TodoForm from './TodoForm';
 import React, {useState} from "react";
 
-const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
+const Todo = ({todos, completeTodo, updateTodo }) => {
   const [edit, setEdit] = useState({
     id: null,
     value: ''

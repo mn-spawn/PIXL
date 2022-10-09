@@ -7,10 +7,11 @@ import TodoForm from './TodoForm';
 import Todo from './Todo';
 import ReviewState from "./ReviewState";
 
+const data = []
+
 function TodoList() {
   const [todos, setTodos] = useState([]);
   const navigate = useNavigate()
-
 
   const addTodo = todo => {
     if (!todo.text || /^\s*$/.test(todo.text)) {
@@ -18,6 +19,8 @@ function TodoList() {
     }
 
     const newTodos = [todo, ...todos];
+    data.push(todo)
+    console.log(data)
 
     setTodos(newTodos);
     console.log(...todos);
@@ -53,15 +56,6 @@ function TodoList() {
         updateTodo={updateTodo}
       />
 
-      <Link 
-        to={{
-          pathname: "/review",
-          state: {todos}
-        }}
-        
-        
-        >
-        </Link>
 
       <button onClick={
         () => openInNewTab("/review")
